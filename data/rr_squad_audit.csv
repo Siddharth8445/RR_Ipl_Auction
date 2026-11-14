@@ -1,0 +1,26 @@
+player_name,nationality,overseas,squad_season,status_for_2027,dataset_name,player_id,id_match_status,listed_matches,played_matches,historical_rr_matches,batting_role,bowling_role,wicketkeeper_matches,identity_matched,historically_listed,historically_played,primary_role,player_type
+Yashasvi Jaiswal,Indian,False,2026,Pending verification,Yashasvi Jaiswal,6819,Matched,69,69,69,Opening batter,Occasional bowling option,0.0,True,True,True,Opening batter,Batting
+Vaibhav Suryavanshi,Indian,False,2026,Pending verification,Vaibhav Sooryavanshi,50284,Matched,30,23,23,Opening batter,No significant bowling usage,0.0,True,True,True,Opening batter,Batting
+Dhruv Jurel,Indian,False,2026,Pending verification,Dhruv Jurel,7260,Matched,58,57,57,Wicketkeeper-batter,No significant bowling usage,24.0,True,True,True,Wicketkeeper-batter,Batting
+Riyan Parag,Indian,False,2026,Pending verification,Riyan Parag,6423,Matched,69,67,67,Middle-order / Finisher,Secondary bowling option,0.0,True,True,True,Middle-order all-rounder,Spin all-rounder
+Shimron Hetmyer,Overseas,True,2026,Pending verification,Shimron Hetmyer,3297,Matched,74,63,63,Middle-order / Finisher,No significant bowling usage,0.0,True,True,True,Finisher,Batting
+Shubham Dubey,Indian,False,2026,Pending verification,Shubham Dubey,25139,Matched,45,20,20,Lower-order batter,No significant bowling usage,0.0,True,True,True,Finisher,Batting
+Donovan Ferreira,Overseas,True,2026,Pending verification,Donovan Ferreira,8182,Matched,31,17,17,Middle-order / Finisher,Occasional bowling option,0.0,True,True,True,Wicketkeeper / Finisher,Batting
+Lhuan-Dre Pretorius,Overseas,True,2026,Pending verification,Lhuan Pretorius,43798,Matched,18,3,3,Middle-order / Finisher,No significant bowling usage,0.0,True,True,True,Top-order batter,Batting
+Ravindra Jadeja,Indian,False,2026,Pending verification,Ravindra Jadeja,152,Matched,16,14,14,Middle-order / Finisher,Secondary bowling option,0.0,True,True,True,Spin all-rounder,Spin
+Sam Curran,Overseas,True,2026,Pending verification,Sam Curran,4409,Matched,0,0,0,,,0.0,True,False,False,Pace all-rounder,Pace
+Jofra Archer,Overseas,True,2026,Pending verification,Jofra Archer,3298,Matched,30,28,28,Lower-order batter,Regular bowling option,0.0,True,True,True,Fast bowler,Pace
+Kwena Maphaka,Overseas,True,2026,Pending verification,Kwena Maphaka,26663,Matched,30,2,2,Lower-order batter,Occasional bowling option,0.0,True,True,True,Fast bowler,Pace
+Nandre Burger,Overseas,True,2026,Pending verification,Nandre Burger,7312,Matched,33,18,18,Lower-order batter,Regular bowling option,0.0,True,True,True,Fast bowler,Pace
+Sandeep Sharma,Indian,False,2026,Pending verification,Sandeep Sharma,2411,Matched,54,38,38,Lower-order batter,Regular bowling option,0.0,True,True,True,Fast bowler,Pace
+Tushar Deshpande,Indian,False,2026,Pending verification,Tushar Deshpande,6806,Matched,30,17,17,Lower-order batter,Regular bowling option,0.0,True,True,True,Fast bowler,Pace
+Yudhvir Singh,Indian,False,2026,Pending verification,Yudhvir Singh,8580,Matched,30,4,4,Lower-order batter,Occasional bowling option,0.0,True,True,True,Pace all-rounder,Pace
+Ravi Bishnoi,Indian,False,2026,Pending verification,Ravi Bishnoi,7503,Matched,16,9,9,Lower-order batter,Secondary bowling option,0.0,True,True,True,Spin bowler,Spin
+Sushant Mishra,Indian,False,2026,Pending verification,Sushant Mishra,7269,Matched,16,2,2,Lower-order batter,Occasional bowling option,0.0,True,True,True,Fast bowler,Pace
+Vignesh Puthur,Indian,False,2026,Pending verification,Vignesh Puthur,48557,Matched,16,0,0,,,0.0,True,True,False,Spin bowler,Spin
+Yash Raj Punja,Indian,False,2026,Pending verification,Yash Punja,41503,Matched,16,8,8,Lower-order batter,Secondary bowling option,0.0,True,True,True,Needs verification,Needs verification
+Aman Rao,Indian,False,2026,Pending verification,Aman Rao Perala,47523,Matched,16,0,0,,,0.0,True,True,False,Needs verification,Needs verification
+Brijesh Sharma,Indian,False,2026,Pending verification,Brijesh Sharma,67036,Matched,16,13,13,Lower-order batter,Secondary bowling option,0.0,True,True,True,Fast bowler,Pace
+Adam Milne,Overseas,True,2026,Pending verification,Adam Milne,1487,Matched,16,1,1,Lower-order batter,Occasional bowling option,0.0,True,True,True,Fast bowler,Pace
+Kuldeep Sen,Indian,False,2026,Pending verification,Kuldeep Sen,7545,Matched,40,12,12,Lower-order batter,Secondary bowling option,0.0,True,True,True,Fast bowler,Pace
+Emanjot Chahal,Indian,False,2026,Pending verification,Emanjot Singh Chahal,43965,Matched,3,0,0,,,0.0,True,True,False,Needs verification,Needs verification
