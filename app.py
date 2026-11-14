@@ -184,12 +184,17 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+st.warning(
+    "2027 verification notice: Player retention, auction eligibility and availability have not been independently confirmed. "
+    "All squad references are historical audit evidence, not a confirmed 2027 roster."
+)
+
 # ---------- Sidebar ----------
 st.sidebar.markdown("## 🏏 RR INTELLIGENCE")
 st.sidebar.caption("IPL 2027 · Auction Strategy Platform")
 page = st.sidebar.radio(
     "WORKSPACE",
-    ["Auction Arena", "Squad Matrix", "Opening Analysis", "Middle-Order Lab",
+    ["Auction Command Centre", "Squad Matrix", "Opening Analysis", "Middle-Order Lab",
      "Bowling Lab", "Strategy Board", "Methodology & Data"]
 )
 st.sidebar.divider()
@@ -206,13 +211,25 @@ st.sidebar.caption("Historical analysis is not a live auction feed.")
 st.sidebar.caption("2027 availability / retention: verify independently.")
 
 # ---------- Page: Auction Arena ----------
-if page == "Auction Arena":
-    st.title("Live Bidding Arena")
-    st.caption("Strategic command centre · Research-backed auction preparation")
+if page == "Auction Command Centre":
+    st.title("Auction Command Centre")
+    st.caption("Research-backed scouting and recruitment preparation · Historical IPL evidence, 2022–2026")
     strategy = data["strategy"]
     middle = data["middle"]
     squad = data["squad"]
     bowling = data["bowling"]
+
+    st.markdown("### Executive Recommendation")
+    st.markdown(
+        "<div class='rr-panel'><div class='rr-kpi-label'>PRIMARY RECRUITMENT PRIORITY</div>"
+        "<div class='rr-kpi-value rr-pink'>DEATH BOWLING</div>"
+        "<p>Historical RR death-phase wicket rate declined from 7.91 per 100 balls in 2022 to 6.39 in 2026. "
+        "This trend makes death bowling the clearest role-level recruitment priority in the current analysis. "
+        "Treat the phase figures as provisional pending validation of extras and legal-ball assumptions.</p>"
+        "<div class='rr-kpi-note'>Scouting implication: prioritise a proven death-overs option, then assess price, role fit, squad balance and verified 2027 availability.</div></div>",
+        unsafe_allow_html=True
+    )
+    st.caption("Evidence labels: observed statistics describe the historical dataset; relative scores compare candidates within this analysis pool; scouting judgements translate evidence into role-fit recommendations.")
 
     c1,c2,c3,c4 = st.columns(4)
     with c1: panel_metric("Roles assessed", len(strategy) if strategy is not None else "—", "Recruitment role map")
@@ -285,6 +302,12 @@ elif page == "Squad Matrix":
 elif page == "Opening Analysis":
     st.title("Opening Partnership & Top-Order Analysis")
     st.caption("Recovered historical opening analysis · interpret shortlist using its source metrics")
+    st.info(
+        "Scouting recommendation: retain Yashasvi Jaiswal and Vaibhav Sooryavanshi as the historical opening options identified in the RR audit, "
+        "and evaluate an additional reliable opener for depth. The available role-level evidence indicates an average of three opening options per season, "
+        "with two in 2026. This is a depth signal, not proof that a specific player is available for the 2027 auction."
+    )
+    st.caption("Observed evidence = historical match and batting records. Combined ranking = model/ranking output from the supplied opening analysis. Final recruitment priority = scouting judgement, subject to role fit and availability verification.")
     conclusion=data["opening_conclusion"]
     ranking=data["opening_ranking"]
     evidence=data["opening_evidence"]
@@ -362,6 +385,12 @@ elif page == "Middle-Order Lab":
 elif page == "Bowling Lab":
     st.title("Bowling Phase Intelligence")
     st.caption("Phase-wise historical evidence · provisional figures pending full extras/legal-ball validation")
+    st.info(
+        "Scouting recommendation: investigate death-overs specialists first. Historical phase leaders in the supplied evidence include "
+        "Harshal Patel, Matheesha Pathirana, Yuzvendra Chahal, Jasprit Bumrah and Rashid Khan. These are evidence-led names for further assessment, "
+        "not confirmed 2027 auction targets. Check current availability, role suitability, overseas-slot constraints and price before recommending any signing."
+    )
+    st.caption("Observed statistics = recorded wickets, balls and pooled economy in the supplied dataset. Phase rank/robustness = comparative historical indicators. Recruitment recommendation = scouting judgement. Bowling figures remain provisional until extras and legal-ball assumptions are validated.")
     df=data["bowling"]
     if df is None:
         st.error("Add data/rr_bowling_evidence.csv.")
@@ -430,6 +459,9 @@ elif page == "Methodology & Data":
         <li>Pressure batting average uses dismissals within the defined pressure-delivery subset; it is not necessarily a conventional career batting average.</li>
         <li>Consistency features may represent overall batting performance rather than role-specific performance.</li>
         <li>Bowling figures are provisional because extras and legal-ball assumptions require further validation.</li>
+        <li>Observed statistics are descriptive values calculated from the supplied historical dataset; they are not forecasts.</li>
+        <li>Relative candidate scores are comparative outputs within the defined candidate pool and depend on the selected metrics and weights; they are not probabilities of future success.</li>
+        <li>Scouting judgements are role-fit recommendations based on the evidence and require human review, squad-balance assessment and current market verification.</li>
         <li>Historical performance does not prove 2027 auction availability, eligibility, retention or purse position.</li>
         <li>All squad references are historical audit records; verify the official 2027 squad before final decisions.</li>
       </ul>
